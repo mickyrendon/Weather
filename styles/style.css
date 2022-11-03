@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #14213D;
+    color: #ffff;
+    font-size: 2rem;
+}
+header{
+    height: 20rem;
+}
+.searcher{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.1rem solid #FCA311;
+}
+form{
+    width: 30rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    background-color: #ffff;
+}
+label[for='city']{
+    width: 80%;
+}
+input[name='city']{
+    width: 100%;
+    height: 2.5rem;
+    /* background-color: red; */
+    border: none;
+    border-radius: 3rem;
+}
+input[name='city']:focus{
+    border: none;
+    outline: none;
+}
+button[type='submit']{
+    margin-left: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    background-image: url(../assets/icons8-búsqueda.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+}

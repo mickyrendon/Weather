@@ -5,20 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <title>Document</title>
 </head>
-<body>
+<body class="w-full h-screen">
     <header>
-        <nav>
+        <nav class="searcher">
             <form action="">
                 <label for="city">
-                    <input type="text" name="city">
-                </label><label for="submit">
-                    <input type="submit" name="submit" value="Buscar">
+                    <input type="text" name="city" placeholder="Ciudad">
                 </label>
+                <button type="submit"></button>
             </form>
         </nav>
-        <h1>El clima</h1>
+        <section class="current-city-ctr">
+            <!-- cards que se renderizaran con js -->
+            <div class="today">
+                <svg class="weather-img"></svg>
+                <span class="number">11</span>
+                <div class="grades">
+                    <label for="">°C
+                        <input type="checkbox">
+                    </label>
+                    <span>|</span>
+                    <label for="">°F
+                        <input type="checkbox">
+                    </label>
+                </div>
+                <div class="details">
+                    <p>Prob. de precipitaciones:
+                        <span>2 %</span>
+                    </p>
+                    <p>Humedad:
+                        <span>91 %</span>
+                    </p>
+                    <p>Viento a: 
+                        <span>3 km/h</span>
+                    </p>
+                </div>
+                <div class="city">
+                    <span>Coquimbo</span>
+                    <span>jueves, 10:00</span>
+                    <span>Nublado</span>
+                </div>
+            </div>
+        </section>
     </header>
     <script type="module" src="./index.js"></script>
     </body>
